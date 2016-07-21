@@ -11,8 +11,4 @@ being written
 
 ### Opening and reading files
 
-## Creating a checksum
-
-## Validating a checksum
-
 
