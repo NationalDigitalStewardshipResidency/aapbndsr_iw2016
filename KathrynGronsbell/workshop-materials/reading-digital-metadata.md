@@ -120,12 +120,14 @@ That makes sense, right? You modified the file. The checksum should NOT match be
 ## Recommended resources
 
 
-[md5 man page](https://www.freebsd.org/cgi/man.cgi?query=md5&sektion=1)
+- [md5 man page](https://www.freebsd.org/cgi/man.cgi?query=md5&sektion=1)
 
-[shasum man page](http://ss64.com/osx/shasum.html)
+- [shasum man page](http://ss64.com/osx/shasum.html)
 
-[Documentation and official code releases of the FITS and the FITS Web Service projects](http://projects.iq.harvard.edu/fits/home) by Harvard University (last update: July 20, 2016)
+- [md5deep/hashdeep](https://github.com/jessek/hashdeep/) - "This is md5deep, a set of cross-platform tools to compute hashes, or message digests, for any number of files while optionally recursively digging through the directory structure. It can also take a list of known hashes and display the filenames of input files whose hashes either do or do not match any of the known hashes. This version supports MD5, SHA-1, SHA-256, Tiger, and Whirlpool hashes." Great tool to have on hand for batch creating/validating/auditing data fixity.
 
-[Comparison of file verification software](https://en.wikipedia.org/wiki/Comparison_of_file_verification_software) on Wikipedia (last update: May 30, 2016)
+- [Documentation and official code releases of the FITS and the FITS Web Service projects](http://projects.iq.harvard.edu/fits/home) by Harvard University (last update: July 20, 2016)
+
+- [Comparison of file verification software](https://en.wikipedia.org/wiki/Comparison_of_file_verification_software) on Wikipedia (last update: May 30, 2016)
 
 
