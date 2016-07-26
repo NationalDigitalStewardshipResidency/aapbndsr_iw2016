@@ -77,11 +77,40 @@ You may also wonder what [KiB, MiB, GiB](https://mediaarea.net/us/MediaInfo/Supp
             
             mediainfo --Inform="General;%FileName%" --Inform="Video;%Format%" --Inform="Audio;%SamplingRate%" [file]
 
+Want to dig down to a specific string within the full output? Find out from this [stackexchange answer](http://stackoverflow.com/a/26508567) from the MediaInfo creator/main developer. 
 
 ### Read metadata using ffprobe
 
+ffprobe ["gathers information from multimedia streams and prints it in human- and machine-readable fashion"](http://ffmpeg.org/ffprobe.html). It, like MediaInfo, is a common metadata extaction and analysis tool that can be incorporated into workflows or used on its own. We will explore ffprobe as a standalone utility to understand its strengths, specifically in terms of surfacing information from specific streams within a given file. 
+
+1. Like we did with MediaInfo, let's see what ffprobe's output is without any options. Enter the command below and read through the output - how does it differ (format and content) from the MediaInfo output for the same file?:
+
+            ffprobe fred_ott_sneeze_512kb.mp4
+
+2. Ok that's alot to parse, right? Let's cut it down by adding the `-hide_banner` option, which tells it to not print copyright, build, or library version info. Run:
+
+            ffprobe fred_ott_sneeze_512kb.mp4 -hide_banner
+
+3. Fun fact - you don't actually need ffprobe to find out this basic info! ffmpeg also allows you to find the same information about a file's contents' - run:
+
+            ffmpeg -i fred_ott_sneeze_512kb.mp4 -hide_banner
+
+NB: ffmpeg will yell at you that atleast one output file is required. We can ignore that warning for now since we are just poking around the extracted metadata.
+
+4. Back to ffprobe. Try all these commands (you can change the input file if you'd like to try another sample file) - what gets printed to the Terminal? Can you think of some use cases for isolating this information:
+
+            ffprobe IMG_7770.mov -select_streams v:0 -show_entries stream=width,height -hide_banner
+
+            ffprobe IMG_7770.mov -select_streams v:0 -show_entries stream=codec_type -hide_banner
+
+            ffprobe IMG_7770.mov -select_streams v:1 -show_entries stream=codec_name -hide_banner
+
+            ffprobe IMG_7770.mov -select_streams v:0 -show_entries stream=duration -hide_banner
+
+[explanation of ffprobe options]
 
 ## Recommended resources
 
-- tbd
+- [ffprobe Tips from ffmpeg Wiki](https://trac.ffmpeg.org/wiki/FFprobeTips)
 
+- If you're looking for the ability to read/write metadata in still image files, recommend checking out [ExifTool](http://owl.phy.queensu.ca/~phil/exiftool/). It has the ability to do metadata wrangling for a/v files, but MediaInfo and ffprobe are designed to support a/v while the focus of ExifTool has always been on still image (also has a great overview of IPTC metadata). 
