@@ -1,0 +1,9 @@
+Files contained in this directory are to be used as part of the NDSR 2016 Immersion Week in-person training session for understanding metadata extraction of audiovisual files. Below is source information about the files contained within this directory. The information is formatted as: filename, source title, source creator/provider, Copyright status or notice, source URL.
+
+English.au, Golden Record: English Greeting, NASA, https://creativecommons.org/licenses/by-nc/3.0/, https://soundcloud.com/nasa/golden-record-english-greeting
+
+feeding_doves.ogv, Feeding Doves, Thomas Edison Company, Public Domain, https://archive.org/details/ThomasEdisonCo.FeedingDoves
+
+fred_ott_sneeze_512kb.mp4, Fredd Ott Sneeze, Thomas Edison Company, Public Domain, https://archive.org/details/ThomasEdisonCo.FredOttSneeze
+
+RingTone01_Longer.mp3, Juno: Morse code "HI" received from Earth, NASA, https://creativecommons.org/licenses/by-nc/3.0/, https://soundcloud.com/nasa/juno-morse-code-hi-received-from-earth?in=nasa/sets/solar-system-beyond-sounds
