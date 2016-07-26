@@ -185,11 +185,10 @@ What is the difference between the list of files and directories that printed wi
 
 ## Recommended resources
 
-1. [Introduction to the command line interface](http://tutorial.djangogirls.org/en/intro_to_command_line/) by Django Girls (available in 14 languages, additional video instruction in English)
-
-2. [Unix Commands and Batch Processing for the Reluctant Librarian or Archivist](http://journal.code4lib.org/articles/9158) by Anthony Cocciolo, (2014)
-
-3. [An Introduction to Using the Command Line
+1. [Command Line Crash Course](http://cli.learncodethehardway.org/book/) is a great introduction to the CLI and shell, good as a refresher too :)
+2. [Introduction to the command line interface](http://tutorial.djangogirls.org/en/intro_to_command_line/) by Django Girls (available in 14 languages, additional video instruction in English)
+3. [Unix Commands and Batch Processing for the Reluctant Librarian or Archivist](http://journal.code4lib.org/articles/9158) by Anthony Cocciolo, (2014)
+4. [An Introduction to Using the Command Line
 Interface (CLI) to Work with Files and Directories (MAC OS)](https://www.avpreserve.com/wp-content/uploads/2015/09/CLI_MacOS_Tutorial.pdf) by Bertram Lyons, AVPreserve (2015)
 
 
