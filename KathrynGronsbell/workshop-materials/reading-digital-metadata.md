@@ -36,20 +36,20 @@ What you see on the Terminal probably looks something like this:
 
 The output can be interpreted (c/o [this stackexchange answer](http://unix.stackexchange.com/a/103118)) as:
 
-"file permissions,
-number of links,
-owner name,
-owner group,
-file size,
-time of last modification, and
-file/directory name
-File permissions is displayed as following;
+- file permissions,
+- number of links,
+- owner name,
+- owner group,
+- file size,
+- time of last modification, and
+- file/directory name
+- File permissions is displayed as following;
 
 first character is - or d, d indicates a directory, a line represents a file
 three sets of characters, three times, indicating permissions for owner, group and other:
-r = readable
-w = writable
-x = executable"
+- r = readable
+- w = writable
+- x = executable
 
 2. Having quick access to the permissions and last modified timestamp can be helpful when troubleshooting or assessing risk factors for a given directory's content. Try using the same command on a different directory (one of your own, probably a more complex one!)
 
