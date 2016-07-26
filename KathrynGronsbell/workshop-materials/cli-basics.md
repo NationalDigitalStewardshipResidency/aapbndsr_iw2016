@@ -54,11 +54,11 @@ You can move through your own file system via the CLI with a few simple commands
 
 1. Best start is to figure out where you are. You can quickly identify your current working directory in two ways:
     
-    1a. Type `pwd` into the Terminal and hit enter. This command prints the path to your current or "working" directory to the Terminal
+1a. Type `pwd` into the Terminal and hit enter. This command prints the path to your current or "working" directory to the Terminal
 
-        _OR_
-        
-    1b. Look at the command prompt in the Terminal. When you open a new Terminal window the tilde (~) represents the home folder which is your current working directory. When you are in a different folder, it will display the name of the directory (e.g. _Desktop_ if you are in _/Users/username/Desktop_).
+OR
+
+1b. Look at the command prompt in the Terminal. When you open a new Terminal window the tilde (~) represents the home folder which is your current working directory. When you are in a different folder, it will display the name of the directory (e.g. _Desktop_ if you are in _/Users/username/Desktop_).
 
 2. Let's change your working directory to your Desktop. Chances are you have a few files or directories sitting in that folder, right? Type the following into the Terminal.
 
@@ -70,21 +70,26 @@ You can move through your own file system via the CLI with a few simple commands
 
         `ls`
 
-    What gets printed to the Terminal? Now try adding the `-a` option, which lists ALL files (including hidden ones like .DS_Store) in your working directory. 
+What gets printed to the Terminal? Now try adding the `-a` option, which lists ALL files (including hidden ones like .DS_Store) in your working directory. 
     
         `ls -a`
     
-    What is the difference between the list of files and directories that printed with `ls` versus `ls -a`?
+What is the difference between the list of files and directories that printed with `ls` versus `ls -a`?
 
 4. Before we move forward, try jumping around to different directories and getting comfortable with navigating the file hierarchies on the CLI. Use these commands (and try `ls` and some of its options!).
 
-        `cd ..` - move to the parent of the current directory
+
+        `cd ..` 
+    - move to the parent of the current directory
         
-        `cd ../..` - move up two levels to the grandparent directory
+        `cd ../..` 
+    - move up two levels to the grandparent directory
         
-        `cd /Applications/Utilities` - move to the Applications directory then the Utilities subdirectory
+        `cd /Applications/Utilities` 
+    - move to the Applications directory then the Utilities subdirectory
         
-        `cd -` - move to the previous working directory (also prints the path to the previous working directory)
+        `cd -` 
+    - move to the previous working directory (also prints the path to the previous working directory)
 
 
 ### Opening, reading, writing, and moving files and directories
