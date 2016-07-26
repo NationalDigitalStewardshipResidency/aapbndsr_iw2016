@@ -133,5 +133,6 @@ That makes sense, right? You modified the file. The checksum should NOT match be
 - [Documentation and official code releases of the FITS and the FITS Web Service projects](http://projects.iq.harvard.edu/fits/home) by Harvard University (last update: July 20, 2016)
 
 - [Comparison of file verification software](https://en.wikipedia.org/wiki/Comparison_of_file_verification_software) on Wikipedia (last update: May 30, 2016)
+- [NDSR-NYC: HOW & WHEN TO BAGIT](https://github.com/dinahhandel/NDSRNY2016_Symposium/tree/master/Bag-it%20Workshop) - Materials in this repo provide supplemental and installation information related to the {Let’s Get Digital} – NDSR-NY 2016 Preservation Week Symposium, an in-person event on April 28, 2016 at the Brooklyn Historical Society in Brooklyn, NY. The BagIt specification is used by many libraries, archives, and systems nationwide for secure transfer of digital content. Some in the digital preservation field have questions about what scenarios may benefit from BagIt, and the widely used file packaging format is described in these tutorial documents.
 
 
