@@ -51,7 +51,7 @@ three sets of characters, three times, indicating permissions for owner, group a
 - w = writable
 - x = executable
 
-2. Having quick access to the permissions and last modified timestamp can be helpful when troubleshooting or assessing risk factors for a given directory's content. Try using the same command on a different directory (one of your own, probably a more complex one!)
+NB: Having quick access to the permissions and last modified timestamp can be helpful when troubleshooting or assessing risk factors for a given directory's content. Try using the same command on a different directory (one of your own, probably a more complex one!)
 
 
 ### Checksum creation
