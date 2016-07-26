@@ -20,14 +20,18 @@ We can use checksum validation to confirm that data has NOT changed in any way (
 
 1. We can use the list or `ls` command to get a summary of permissions in a given directory. If you're in _cli-basics-samples_, use the `-l` option for long listing formatted output:
 
-            `ls -l`
+            ls -l
 
 What you see on the Terminal probably looks something like this:
 
 `total 1280`
+
 `-rw-r--r--@ 1 kathryngronsbell  staff   63148 Jul 25 20:26 Shar_pei_casa.JPG`
+
 `-rw-r--r--@ 1 kathryngronsbell  staff  582947 Jul 25 18:23 celebrate.gif`
+
 `-rw-r--r--  1 kathryngronsbell  staff      17 Jul 25 18:25 hello.txt`
+
 `drwxr-xr-x  3 kathryngronsbell  staff     102 Jul 25 20:58 this-is-a-subdir`
 
 The output can be interpreted (c/o [this stackexchange answer](http://unix.stackexchange.com/a/103118)) as:
@@ -58,19 +62,19 @@ The following instructions lay out the basics of generating a checksum.
 
 2. Generating a hash value can be done using downloaded or already-installed programs and utilties. Most UNIX operating systems already have tools like `md5` and `shasum` installed by default so we will start with these to create our source checksum hash value for a given file. Type:
 
-            `md5 hello.txt`
+            md5 hello.txt
 
 The information printed to the Terminal from that command should look like this, containing the alogrithm desination, the file in parantheses, and the 32 character hash value for the file following the equals sign:
 
-            `MD5 (hello.txt) = 9522afb8dc1fa2e1f7a5a771a94765a6`
+            MD5 (hello.txt) = 9522afb8dc1fa2e1f7a5a771a94765a6
 
 3. Great job! You have created a checksum using md5. Let's try to create a SHA-356 checksum for the same file. Type:
 
-            `shasum -a 256 hello.txt`
+            shasum -a 256 hello.txt
 
 The `-a` option allows you to designate the algorithm used to generate a hash value (in this case, 256). Look at the output from this command. Does it look like the output below (with the 64 character hash value followed by the file name)?
 
-            `8488307e4acd57561c432dea45da696b3d29935478fdde7de544522016851606  hello.txt`
+            8488307e4acd57561c432dea45da696b3d29935478fdde7de544522016851606  hello.txt
 
 
 4. Nice! Okay, so printing hash values to the Terminal might be a blast...but there are more powerful and efficient ways to create hashes so that they are more primed to be validated. The next section shows us how we can validate checksums on a small scale. 
@@ -87,19 +91,19 @@ The `-a` option allows you to designate the algorithm used to generate a hash va
 
 3. Let's try a command that creates a specially-formatted text files containing the hash information for validation in your working directory. If you are not already on the Desktop, `cd` into your Desktop so you are pointing at the correct file (_)/Desktop/hello.txt_):
 
-            `shasum -a 256 hello.txt > hello.txt.sha256sum`
+            shasum -a 256 hello.txt > hello.txt.sha256sum
 
 4. Now let's see what ended up in that .sha256sum file. Use `cat` to print the text to the Terminal and review it (should look familiar!):
 
-            `cat hello.txt.sha256sum`
+            cat hello.txt.sha256sum
 
 5. We can use shasum to "check" or validate previously generated checksums. When we do this first validation it should work since there has been no intentional modification of our target file (and hopefully no unintentional corruption!). Use the command below to validate your SHA-256 checksum for _hello.txt_ on the Desktop:
 
-            `shasum -c hello.txt.sha256sum`
+            shasum -c hello.txt.sha256sum
 
 The output should have printed the filename followed by a colon and the text "OK", as seen here:
 
-            `hello.txt: OK`
+            hello.txt: OK
 
 Congrats - you used shasum to automatically validate a checksum! Now let's rustle some bit-level feathers.
 
@@ -107,8 +111,8 @@ Congrats - you used shasum to automatically validate a checksum! Now let's rustl
 
 7. Re-run validation using shasum (Step #5 above). Did the output say:
 
-            `hello.txt: FAILED`
-            `shasum: WARNING: 1 computed checksum did NOT match`
+            hello.txt: FAILED
+            shasum: WARNING: 1 computed checksum did NOT match
 
 That makes sense, right? You modified the file. The checksum should NOT match because of that modification. If you didn't get this result, check the file and make sure you actually saved/wrote the changes to your file.
 
