@@ -1,4 +1,4 @@
-# Commmand Line Basics
+# Command Line Basics
 
 The following information is related to the _NDSR 2016 Immersion Week - Automating Procedures for Digital Asset Management_ presentation also found in this GitHub repository. 
 
@@ -98,7 +98,7 @@ What is the difference between the list of files and directories that printed wi
 
 ### Opening, reading, writing, and moving files and directories
 
-1. Let's dig into the sample files. Change the working directory to whereever the ZIP file was auto-downloaded to. You can type `cd` then drag and drop the folder containing _cli-basics-samples.zip_. This might look like:
+1. Let's dig into the sample files. Change the working directory to where ever the ZIP file was auto-downloaded to. You can type `cd` then drag and drop the folder containing _cli-basics-samples.zip_. This might look like:
 
         cd Downloads/
 
@@ -106,7 +106,7 @@ What is the difference between the list of files and directories that printed wi
 
         ls *.zip
         
-    This command lists filenames ending with the four characters following the asterisk (dot, z, i, p in that order). Try this command with another common file externsion (like .pdf or .jpg).
+    This command lists filenames ending with the four characters following the asterisk (dot, z, i, p in that order). Try this command with another common file extension (like .pdf or .jpg).
 
 3. Now we want to make a copy of _cli-basics-samples.zip_ on your Desktop - we'll use the move or `mv` command. For example, `mv file1.txt otherDirectory/file2.txt` - "moves" and/or renames file1 from source location to a destination location (`otherdirectory` and names it `file2.txt`). In the Terminal, type:
 
@@ -133,7 +133,7 @@ What is the difference between the list of files and directories that printed wi
 
         ls 
 
-- What files and folders are provided? Now change your working directory into the subdirectory and use the list command to explore this subhierarchy.
+- What files and folders are provided? Now change your working directory into the subdirectory and use the list command to explore this sub-hierarchy.
 
 - Change your working directory back to _cli-basics-samples_ (you can use the path or `cd ..`)
 
@@ -192,7 +192,7 @@ What is the difference between the list of files and directories that printed wi
 
 16. `cd` back up to _cli-basics-samples_. Now try #14 again. Check with `ls` that it's successfully deleted.
 
-17. Ok, last deletion. Let's get rid of that _dog.jpg_. You can remove files from non-parent directories For example, if youre in _cli-basics-samples_ you can use the following command to delete a grandchild file:
+17. Ok, last deletion. Let's get rid of that _dog.jpg_. You can remove files from non-parent directories For example, if you're in _cli-basics-samples_ you can use the following command to delete a grandchild file:
 
         rm this-is-a-subdir/dog.jpg 
 

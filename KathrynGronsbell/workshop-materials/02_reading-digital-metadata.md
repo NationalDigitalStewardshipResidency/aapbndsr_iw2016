@@ -7,7 +7,7 @@ The following information is related to the _NDSR 2016 Immersion Week - Automati
 
 This page focuses on understanding the construction and permissions related to files we access. 
 
-We can use checksum validation to confirm that data has NOT changed in any way (down to the bit level) compared to specific reference point. Checksums can be generated for individual files, batches of files, or chunks within files. The core concepts below lay the foundation for more extensive or complex data validation procedures. For archivisits and preservationists, you will likely see MD5 and SHA-256 most commonly in your work. These are not used for encryption or encoding (as they both have significant vulnerabilities) but are appropriate for use in verifying data integrity and supporting data management. 
+We can use checksum validation to confirm that data has NOT changed in any way (down to the bit level) compared to a specific reference point or record. Checksums can be generated for individual files, batches of files, or chunks within files. The core concepts below lay the foundation for more extensive or complex data validation procedures. For archivists and preservationists, you will frequently see MD5 and SHA-256 in your work. These are not used for encryption or encoding (as they both have significant vulnerabilities) but are appropriate for use in verifying data integrity and supporting data management activities. 
 
 
 ## Getting started
@@ -60,11 +60,11 @@ The following instructions lay out the basics of generating a checksum.
 
 1. Make sure your working directory is _cli-basics-samples_, which should be on your Desktop (HINT: use `pwd`).
 
-2. Generating a hash value can be done using downloaded or already-installed programs and utilties. Most UNIX operating systems already have tools like `md5` and `shasum` installed by default so we will start with these to create our source checksum hash value for a given file. Type:
+2. Generating a hash value can be done using downloaded or already-installed programs and utilities. Most UNIX operating systems already have tools like `md5` and `shasum` installed by default so we will start with these to create our source checksum hash value for a given file. Type:
 
             md5 hello.txt
 
-The information printed to the Terminal from that command should look like this, containing the alogrithm desination, the file in parantheses, and the 32 character hash value for the file following the equals sign:
+    The information printed to the Terminal from that command should look like this, containing the algorithm destination, the file in parentheses, and the 32 character hash value for the file following the equals sign:
 
             MD5 (hello.txt) = 9522afb8dc1fa2e1f7a5a771a94765a6
 
@@ -81,7 +81,7 @@ The `-a` option allows you to designate the algorithm used to generate a hash va
 
 
 
-### Checksum valiation
+### Checksum validation
 
 
 1. Copy _hello.txt_ to your Desktop (outside of the _cli-basics-samples_ folder). You can copy & paste or use `cp hello.txt ~/Desktop/hello.txt`
@@ -105,7 +105,7 @@ The output should have printed the filename followed by a colon and the text "OK
 
             hello.txt: OK
 
-Congrats - you used shasum to automatically validate a checksum! Now let's rustle some bit-level feathers.
+    Congrats - you used shasum to automatically validate a checksum! Now let's rustle some bit-level feathers.
 
 6. Use a text editing program (or vim!) to modify the text of the _hello.txt_ file and save it.
 
@@ -114,11 +114,11 @@ Congrats - you used shasum to automatically validate a checksum! Now let's rustl
             hello.txt: FAILED
             shasum: WARNING: 1 computed checksum did NOT match
 
-That makes sense, right? You modified the file. The checksum should NOT match because of that modification. If you didn't get this result, check the file and make sure you actually saved/wrote the changes to your file.
+    That makes sense, right? You modified the file. The checksum should NOT match because of that modification. If you didn't get this result, check the file and make sure you actually saved/wrote the changes to your file.
 
 8. Now go back into your _cli-basics-samples_ folder. Mess around with the provided files (modify the contents, filename, size, anything!). Use manual and automated validation procedures to see what causes the checksum to change.
 
-- For example, change the name of one of the provided files. You can do this by just changing the filename of the file's icon or using the `mv` command we explored in the [CLI Basics](cli-basics.md) section. What happens to the checksum after the file name is changed? [Will changing a file name affect the MD5 Hash of a file?](http://stackoverflow.com/a/14360831)
+    - For example, change the name of one of the provided files. You can do this by just changing the filename of the file's icon or using the `mv` command we explored in the [CLI Basics](cli-basics.md) section. What happens to the checksum after the file name is changed? [Will changing a file name affect the MD5 Hash of a file?](http://stackoverflow.com/a/14360831)
 
 
 ## Recommended resources
