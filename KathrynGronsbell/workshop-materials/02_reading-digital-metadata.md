@@ -14,7 +14,7 @@ We can use checksum validation to confirm that data has NOT changed in any way (
 
 1. Open Terminal (Applications > Utilities > Terminal). 
 
-2. Change your working directory to the CLI samples folder from the (previous exercise)[cli-basics.md] called [cli-basics-samples] that should be on your Desktop.
+2. Change your working directory to the CLI samples folder from the [previous exercise](./01_cli-basics.md) called _cli-basics-samples_ that should be on your Desktop.
 
 ### Viewing read and write access
 
