@@ -29,11 +29,17 @@ Below are recommendations to explore [FFmpeg](http://ffmpeg.org/ffmpeg.html) thr
             ffmpeg -ss HH:MM:SS -i input_file -vf "fps=10,scale=500:-1" -t 3 -loop 6 output_file
 
 *ffmpeg* | starts the command
+
 *-ss HH:MM:SS* | starting point of the gif. If a plain numerical value is used it will be interpreted as seconds
+
 *-i input_file* | path, name and extension of the input file
+
 *"fps=frame rate,scale=width:height,palettegen"* | a complex filtergraph using the fps filter to set frame rate, the scale filter to resize. The scale value of -1 preserves the aspect ratio
-*-t 3* | duration in seconds (here 3; can be specified also with a full timestamp, i.e. here 00:00:03)
+
+*-t 3* | duration in seconds
+
 *-loop 6* | number of times to loop the gif. A value of -1 will disable looping. Omitting -loop will use the default which will loop infinitely
+
 *output_file* | path, name and extension of the output file (in our case, make sure to end it with .gif!)
 
 So the command to run in Terminal would be:
@@ -51,14 +57,18 @@ So the command to run in Terminal would be:
 2. Choose a command from the ones provided on ffmprovisr. Now choose an input file from the samples provided. Try to run the command.
 
 3. Write down the answers to these questions:
-- What ffmprovisr command did you choose? 
-- What was your actual command that you entered into Terminal? Can you walk us through the options you chose?
-- What was the outcome? Is it what you expected? Did it work the first time?
-- What is a use case that could be satisfied by using the command you chose (real or educated imagining)?
+
+   - What ffmprovisr command did you choose? 
+            
+   - What was your actual command that you entered into Terminal? Can you walk us through the options you chose?
+            
+   - What was the outcome? Is it what you expected? Did it work the first time?
+
+   - What is a use case that could be satisfied by using the command you chose (real or educated imagining)?
 
 4. We'll have a group discussion and trying to replicate your command as a group. Did we all get the same results? 
 
 
-* Reminder that ffmprovisr relies on the community for support, new ideas, and maintenance! If you have a great FFmpeg command you'd like to see, find a typo or a bug, or just want to help out - contribute by [submitting an issue](https://github.com/amiaopensource/ffmprovisr/issues) on ffmprovisr's GitHub page.
+*Reminder*: ffmprovisr relies on the community for support, new ideas, and maintenance! If you have a great FFmpeg command you'd like to see, find a typo or a bug, or just want to help out - contribute by [submitting an issue](https://github.com/amiaopensource/ffmprovisr/issues) on ffmprovisr's GitHub page.
 
 
