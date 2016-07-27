@@ -22,7 +22,7 @@ This page focuses on getting comfortable using two common tools - [MediaInfo](ht
 
             man ffprobe
 
-If you do not have either of these tools installed, follow directions to [install ffmpeg/ffprobe](https://trac.ffmpeg.org/wiki/CompilationGuide/MacOSX) and [install MediaInfo](http://mediaarea.net/en/MediaInfo/Download). If you are using Homebrew (which is great, simple to use package installer for Mac), you can simply type:
+If you do not have either of these tools installed, follow directions to [install FFmpeg/ffprobe](https://trac.ffmpeg.org/wiki/CompilationGuide/MacOSX) and [install MediaInfo](http://mediaarea.net/en/MediaInfo/Download). If you are using Homebrew (which is great, simple to use package installer for Mac), you can simply type:
 
             brew install ffmpeg
 
@@ -91,11 +91,11 @@ ffprobe ["gathers information from multimedia streams and prints it in human- an
 
             ffprobe fred_ott_sneeze_512kb.mp4 -hide_banner
 
-3. Fun fact - you don't actually need ffprobe to find out this basic info! ffmpeg also allows you to find the same information about a file's contents' - run:
+3. Fun fact - you don't actually need ffprobe to find out this basic info! FFmpeg also allows you to find the same information about a file's contents' - run:
 
             ffmpeg -i fred_ott_sneeze_512kb.mp4 -hide_banner
 
-NB: ffmpeg will yell at you that atleast one output file is required. We can ignore that warning for now since we are just poking around the extracted metadata.
+NB: FFmpeg will yell at you that atleast one output file is required. We can ignore that warning for now since we are just poking around the extracted metadata.
 
 4. Back to ffprobe. Try all these commands (you can change the input file if you'd like to try another sample file) - what gets printed to the Terminal? Can you think of some use cases for isolating this information:
 
@@ -107,10 +107,9 @@ NB: ffmpeg will yell at you that atleast one output file is required. We can ign
 
             ffprobe IMG_7770.mov -select_streams v:0 -show_entries stream=duration -hide_banner
 
-[explanation of ffprobe options]
 
 ## Recommended resources
 
-- [ffprobe Tips from ffmpeg Wiki](https://trac.ffmpeg.org/wiki/FFprobeTips)
+- [ffprobe Tips from FFmpeg Wiki](https://trac.ffmpeg.org/wiki/FFprobeTips)
 
 - If you're looking for the ability to read/write metadata in still image files, recommend checking out [ExifTool](http://owl.phy.queensu.ca/~phil/exiftool/). It has the ability to do metadata wrangling for a/v files, but MediaInfo and ffprobe are designed to support a/v while the focus of ExifTool has always been on still image (also has a great overview of IPTC metadata). 
