@@ -14,19 +14,19 @@ This page focuses on getting comfortable using two common tools - [MediaInfo](ht
 
 2. Download the sample materials for this exercise (av-metadata-samples.zip). Use `mv` to move the zip file to your Desktop. Then use `unzip` to unpackage it into a directory (see [cli-basics](cli-basics.md) for a refresher on how to do this). 
 
-3. You should already have MediaInfo and ffprobe installed. Check this by trying to look at the documentation:
+3. You should already have MediaInfo and ffprobe installed. Check this by trying to look at the documentation for MediaInfo:
 
             mediainfo
 
-
+ - And for ffprobe:
 
             man ffprobe
 
-If you do not have either of these tools installed, follow directions to [install FFmpeg/ffprobe](https://trac.ffmpeg.org/wiki/CompilationGuide/MacOSX) and [install MediaInfo](http://mediaarea.net/en/MediaInfo/Download). If you are using Homebrew (which is great, simple to use package installer for Mac), you can simply type:
+If you do not have either of these tools installed, follow directions to [install FFmpeg/ffprobe](https://trac.ffmpeg.org/wiki/CompilationGuide/MacOSX) and [install MediaInfo](http://mediaarea.net/en/MediaInfo/Download). If you are using Homebrew (which is great, simple to use package installer for Mac), you can simply type for FFmpeg (ffprobe included):
 
             brew install ffmpeg
 
-
+ - And for MediaInfo:
 
             brew install media-info
 
@@ -40,15 +40,15 @@ MediaInfo is ["a convenient unified display of the most relevant technical and t
             mediainfo fred_ott_sneeze_512kb.mp4
 
 
-The data presented as part of this full output may be divided into:
-- General
-- Video
-- Audio
-- Text
-- Chapters
-- Other
+ The data presented as part of this full output may be divided into:
+ - General
+ - Video
+ - Audio
+ - Text
+ - Chapters
+ - Other
 
-You may also wonder what [KiB, MiB, GiB](https://mediaarea.net/us/MediaInfo/Support/FAQ#BinaryPrefix) is in the File Size value?
+ You may also wonder what [KiB, MiB, GiB](https://mediaarea.net/us/MediaInfo/Support/FAQ#BinaryPrefix) is in the File Size value?
 
 2. You can also review the output formatted as XML by adding an option and then opening the XML. This command redirects MediaInfo's output to a new XML document you are creating in your working folder:
 
@@ -59,9 +59,10 @@ You may also wonder what [KiB, MiB, GiB](https://mediaarea.net/us/MediaInfo/Supp
             open fred-mediainfo.xml
 
 4. Run MediaInfo on the other sample files provided in _av-metadata-samples_. 
-- Review the output with a partner - how does this output align with what was discussed as part of your _Introduction to managing digital audiovisual media_ and _Introduction to audiovisual metadata_ sessions during NDSR Immersion week? 
-- Where is the technical metadata? The descriptive metadata? Where are administrative values present?
-- Run MediaInfo with the Full option (`-f`) - what additional information is available in the output? 
+ - Review the output with a partner - how does this output align with what was discussed as part of your _Introduction to managing digital audiovisual media_ and _Introduction to audiovisual metadata_ sessions during NDSR Immersion week? 
+ - Where is the technical metadata? The descriptive metadata? Where are administrative values present?
+
+ - Run MediaInfo with the Full option (`-f`) - what additional information is available in the output? 
 
 5. There may be workflows where you do not want the general output from a metadata extraction tool. For example, you may just want to audit the wrapper formats or durations for a target set of files. You can specify which tags you want to output from MediaInfo. Try out these commands for any of the sample files:
 
@@ -77,7 +78,7 @@ You may also wonder what [KiB, MiB, GiB](https://mediaarea.net/us/MediaInfo/Supp
             
             mediainfo --Inform="General;%FileName%" --Inform="Video;%Format%" --Inform="Audio;%SamplingRate%" [file]
 
-Want to dig down to a specific string within the full output? Find out from this [stackexchange answer](http://stackoverflow.com/a/26508567) from the MediaInfo creator/main developer. 
+ Want to dig down to a specific string within the full output? Find out from this [stackexchange answer](http://stackoverflow.com/a/26508567) from the MediaInfo creator/main developer. 
 
 ### Read metadata using ffprobe
 
@@ -95,7 +96,7 @@ ffprobe ["gathers information from multimedia streams and prints it in human- an
 
             ffmpeg -i fred_ott_sneeze_512kb.mp4 -hide_banner
 
-NB: FFmpeg will yell at you that atleast one output file is required. We can ignore that warning for now since we are just poking around the extracted metadata.
+ NB: FFmpeg will yell at you that atleast one output file is required. We can ignore that warning for now since we are just poking around the extracted metadata.
 
 4. Back to ffprobe. Try all these commands (you can change the input file if you'd like to try another sample file) - what gets printed to the Terminal? Can you think of some use cases for isolating this information:
 
