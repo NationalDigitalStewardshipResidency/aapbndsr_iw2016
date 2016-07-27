@@ -11,7 +11,7 @@ The activities and discussion points below provide an overview of the scenarios 
 
 The first question we need to address is: *why are you trying to modify metadata?*
 
-For this workshop, we will be working with individual test files, which is less likely to be the best way forward at your residencies. Hopefully, any writing of metadata would be done by batch (preferably scripted or using an existing tool) as part of a workflow dictated by policy.
+For this workshop, we will be working with writing metada to individual test files. This is not necessarily the scenario you'll be faced with during your residencies. Hopefully, any writing of metadata would be done by batch (preferably scripted or using an existing tool) as part of a workflow dictated by policy.
 
 
 ### DISCUSSION: Sharing metadata modification scenarios
@@ -20,18 +20,20 @@ For this workshop, we will be working with individual test files, which is less 
 
 2. Document these scenarios as use cases, using this format:
 
-    _As a_ [ROLE], _I need_ [REQUIREMENT] _so that_ [BENEFIT].
+   _As a_ [ROLE], _I need_ [REQUIREMENT] _so that_ [BENEFIT].
 
-For example, a use case for modifying metadata might be:
+ For example, a use case for modifying metadata might be:
 
-_As an archivist, I need to embed my institution's copyright notice into all access derivatives of our Video Collection so that when these access derivatives are released to the public, users will see the rights information for each file they are interested in using._
+   _As an archivist, I need to embed my institution's copyright notice into all access derivatives of our Video Collection so that when these access derivatives are released to the public, users will see the rights information for each file they are interested in using._
+
+3. Let's discuss.
 
 
 ### ACTIVITY: Add descriptive metadata to A/V files
 
 1. Open Terminal. `cd` to the Desktop copy of _av-metadata-samples_ folder.
 
-2. We are going to use FFmpeg to write metadata in a key,value pair into an A/V file. FFmpeg (and many other tools that write metadata) has their only or default option to create a temporary file or create a new output file with updated metadata values. This is useful for testing commands because it does not overwrite your original file. We want to add a dummy title to the file _test1.mkv_. We can do that using the FFmpeg command:
+2. We are going to use FFmpeg to write metadata in a key,value pair into an A/V file. Tools that write metadata only or default options frequently create a temporary file or create a new output file with updated metadata values. This is useful for testing commands because it does not overwrite your original file. We want to add a dummy *title* to the file _test1.mkv_. We can do that using the FFmpeg command:
 
         ffmpeg -loglevel quiet -i test1.mkv -codec copy -metadata title="My title" test1-out.mkv
 
@@ -47,7 +49,7 @@ _As an archivist, I need to embed my institution's copyright notice into all acc
 
 *output_file* | path, name and extension of the output file (make sure it's different than the source filename so there are no conflicts!)
 
-3. Using the format in Step #2, try to update other metadata in other provided sample files. NB: assigning an empty value ("") will delete metadata from the field. Reading the [`-metadata` docs](http://ffmpeg.org/ffmpeg.html#Main-options) for more information and check out the resources in the next section for tag IDs. 
+3. Using the format in Step #2, try to update other metadata in other provided sample files. NB: assigning an empty value ("") will delete metadata from the field. Review the [`-metadata` docs](http://ffmpeg.org/ffmpeg.html#Main-options) for more information and check out the resources in the next section for metadata tag IDs and more command examples. 
 
 ## Recommended resources 
 
