@@ -31,7 +31,7 @@ You will likely use the following commands frequently as you get more comfortabl
 
 1. Open Terminal (Applications > Utilities > Terminal). 
 
-2. Download the sample materials for this exercise (cli-basics-samples.zip). Do not move the ZIP file - leave it in your DOWNLOADS folder. 
+2. Download the sample materials for this exercise ([cli-basics-samples.zip](./workshop-samples/cli-basics-samples.zip). Do not move the ZIP file - leave it in your DOWNLOADS folder. 
 
 
 ### Navigating a file system
