@@ -64,7 +64,7 @@ OR
 
         cd Desktop
 
-    Then confirm you're in the right place. Type `pwd` - what appears after you submit this command?
+ Then confirm you're in the right place. Type `pwd` - what appears after you submit this command?
 
 3. Great. Now we are going to use the `ls` or list command to see what is in your working directory (the Desktop). Type:
 
@@ -81,19 +81,19 @@ What is the difference between the list of files and directories that printed wi
 
         cd ..
 
-- move to the parent of the current directory
+ - move to the parent of the current directory
 
         cd ../..
 
-- move up two levels to the grandparent directory
+ - move up two levels to the grandparent directory
     
         cd /Applications/Utilities
 
-- move to the Applications directory then the Utilities subdirectory
+ - move to the Applications directory then the Utilities subdirectory
   
         cd -
 
-- move to the previous working directory (also prints the path to the previous working directory)
+ - move to the previous working directory (also prints the path to the previous working directory)
 
 
 ### Opening, reading, writing, and moving files and directories
@@ -105,14 +105,14 @@ What is the difference between the list of files and directories that printed wi
 2. List all the files in your new working directory - is _cli-basics-samples.zip_ there? You can check quickly by listing only files that have the extension "zip" with this command:
 
         ls *.zip
-        
-    This command lists filenames ending with the four characters following the asterisk (dot, z, i, p in that order). Try this command with another common file extension (like .pdf or .jpg).
+
+ This command lists filenames ending with the four characters following the asterisk (dot, z, i, p in that order). Try this command with another common file extension (like .pdf or .jpg).
 
 3. Now we want to make a copy of _cli-basics-samples.zip_ on your Desktop - we'll use the move or `mv` command. For example, `mv file1.txt otherDirectory/file2.txt` - "moves" and/or renames file1 from source location to a destination location (`otherdirectory` and names it `file2.txt`). In the Terminal, type:
 
         mv cli-basics-samples.zip ~/Desktop/cli-basics-samples-moved.zip
 
-- Using Finder (or just looking at your Desktop) - can you visually confirm the file has been moved? 
+ - Using Finder (or just looking at your Desktop) - can you visually confirm the file has been moved? 
 
 4. Let's use the CLI to verify the file was moved correctly and unzip it. Do the following:
 
@@ -120,12 +120,12 @@ What is the difference between the list of files and directories that printed wi
 
         ls *.zip
 
-- has the file _cli-basics-samples-moved.zip_ been moved to the Desktop?
+ - has the file _cli-basics-samples-moved.zip_ been moved to the Desktop?
 
 
         unzip cli-basics-samples-moved.zip -d cli-basics-samples
 
-- unzips file to a directory on the Desktop we are naming _cli-basics-samples_
+ - unzips file to a directory on the Desktop we are naming _cli-basics-samples_
 
 5. Look in the provided samples directory.
 
@@ -133,9 +133,9 @@ What is the difference between the list of files and directories that printed wi
 
         ls 
 
-- What files and folders are provided? Now change your working directory into the subdirectory and use the list command to explore this sub-hierarchy.
+ - What files and folders are provided? Now change your working directory into the subdirectory and use the list command to explore this sub-hierarchy.
 
-- Change your working directory back to _cli-basics-samples_ (you can use the path or `cd ..`)
+ - Change your working directory back to _cli-basics-samples_ (you can use the path or `cd ..`)
 
 6. Let's move some files around. First, find the JPEG in the folder (HINT: use an `ls` option)
 
@@ -147,16 +147,16 @@ What is the difference between the list of files and directories that printed wi
 
         ls this-is-a-subdir/ 
 
-- Do you see the newly copied JPEG image? 
+ - Do you see the newly copied JPEG image? 
 
 9. You should still be in _cli-basics-samples_ (check with `pwd`). Let's look at one of the text files provided. You can read the file in two ways:
 
-    9a. Using `cat` to print the text in the Terminal. `cat` can be used to display, combine/append, or create new text. Let's start by just reading the existing text.
+ 9a. Using `cat` to print the text in the Terminal. `cat` can be used to display, combine/append, or create new text. Let's start by just reading the existing text.
     
         cat hello.txt
-    _OR_
+ _OR_
      
-    9b. You can open a file in the default application by using the `open` command:
+ 9b. You can open a file in the default application by using the `open` command:
     
         open hello.txt
 
@@ -178,17 +178,17 @@ What is the difference between the list of files and directories that printed wi
 
         rmdir other-subdir
 
-- What happened? 
+ - What happened? 
 
 15. There are few instances where the CLI will try to stop you from deleting something - this is one of them. Change the working directory to _other-subdir_. Then delete the _hola.txt_ file.
 
         rm hola.txt
 
-- Notice how this is `rm`, and to delete a directory is `rmdir`. 
+ - Notice how this is `rm`, and to delete a directory is `rmdir`. 
     
         ls 
 
-- The directory should be empty - yes?
+ - The directory should be empty - yes?
 
 16. `cd` back up to _cli-basics-samples_. Now try #14 again. Check with `ls` that it's successfully deleted.
 
