@@ -54,11 +54,11 @@ You can move through your own file system via the CLI with a few simple commands
 
 1. Best start is to figure out where you are. You can quickly identify your current working directory in two ways:
     
-1a. Type `pwd` into the Terminal and hit enter. This command prints the path to your current or "working" directory to the Terminal
+ 1a. Type `pwd` into the Terminal and hit enter. This command prints the path to your current or "working" directory to the Terminal
 
-OR
+ _OR_
 
-1b. Look at the command prompt in the Terminal. When you open a new Terminal window the tilde (~) represents the home folder which is your current working directory. When you are in a different folder, it will display the name of the directory (e.g. _Desktop_ if you are in _/Users/username/Desktop_).
+ 1b. Look at the command prompt in the Terminal. When you open a new Terminal window the tilde (~) represents the home folder which is your current working directory. When you are in a different folder, it will display the name of the directory (e.g. _Desktop_ if you are in _/Users/username/Desktop_).
 
 2. Let's change your working directory to your Desktop. Chances are you have a few files or directories sitting in that folder, right? Type the following into the Terminal.
 
@@ -70,11 +70,11 @@ OR
 
         ls
 
-What gets printed to the Terminal? Now try adding the `-a` option, which lists ALL files (including hidden ones like .DS_Store) in your working directory. 
+ - What gets printed to the Terminal? Now try adding the `-a` option, which lists ALL files (including hidden ones like .DS_Store) in your working directory. 
     
-        ls -a
+        `ls -a`
     
-What is the difference between the list of files and directories that printed with `ls` versus `ls -a`?
+ - What is the difference between the list of files and directories that printed with `ls` versus `ls -a`?
 
 4. Before we move forward, try jumping around to different directories and getting comfortable with navigating the file hierarchies on the CLI. Use these commands (and try `ls` and some of its options!).
 
@@ -83,15 +83,15 @@ What is the difference between the list of files and directories that printed wi
 
  - move to the parent of the current directory
 
-        cd ../..
+        `cd ../..`
 
  - move up two levels to the grandparent directory
     
-        cd /Applications/Utilities
+       `cd /Applications/Utilities`
 
  - move to the Applications directory then the Utilities subdirectory
   
-        cd -
+        `cd -`
 
  - move to the previous working directory (also prints the path to the previous working directory)
 
@@ -122,8 +122,7 @@ What is the difference between the list of files and directories that printed wi
 
  - has the file _cli-basics-samples-moved.zip_ been moved to the Desktop?
 
-
-        unzip cli-basics-samples-moved.zip -d cli-basics-samples
+        `unzip cli-basics-samples-moved.zip -d cli-basics-samples`
 
  - unzips file to a directory on the Desktop we are naming _cli-basics-samples_
 
@@ -186,7 +185,7 @@ What is the difference between the list of files and directories that printed wi
 
  - Notice how this is `rm`, and to delete a directory is `rmdir`. 
     
-        ls 
+        `ls` 
 
  - The directory should be empty - yes?
 
