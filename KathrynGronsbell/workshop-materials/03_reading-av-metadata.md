@@ -12,7 +12,7 @@ This page focuses on getting comfortable using two common tools - [MediaInfo](ht
 
 1. Open Terminal (Applications > Utilities > Terminal). 
 
-2. Download the sample materials for this exercise (av-metadata-samples.zip). Use `mv` to move the zip file to your Desktop. Then use `unzip` to unpackage it into a directory (see [cli-basics](cli-basics.md) for a refresher on how to do this). 
+2. Download the sample materials for this exercise [av-metadata-samples.zip](./workshop-samples/av-metadata-samples.zip). Use `mv` to move the zip file to your Desktop. Then use `unzip` to unpackage it into a directory (see [cli-basics](./01_cli-basics.md) for a refresher on how to do this). 
 
 3. You should already have MediaInfo and ffprobe installed. Check this by trying to look at the documentation for MediaInfo:
 
