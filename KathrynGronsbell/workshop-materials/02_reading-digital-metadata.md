@@ -105,7 +105,7 @@ The output should have printed the filename followed by a colon and the text "OK
 
             hello.txt: OK
 
-    Congrats - you used shasum to automatically validate a checksum! Now let's rustle some bit-level feathers.
+ - Congrats - you used shasum to automatically validate a checksum! Now let's rustle some bit-level feathers.
 
 6. Use a text editing program (or vim!) to modify the text of the _hello.txt_ file and save it.
 
@@ -114,7 +114,8 @@ The output should have printed the filename followed by a colon and the text "OK
             hello.txt: FAILED
             shasum: WARNING: 1 computed checksum did NOT match
 
-    That makes sense, right? You modified the file. The checksum should NOT match because of that modification. If you didn't get this result, check the file and make sure you actually saved/wrote the changes to your file.
+
+ - That makes sense, right? You modified the file. The checksum should NOT match because of that modification. If you didn't get this result, check the file and make sure you actually saved/wrote the changes to your file.
 
 8. Now go back into your _cli-basics-samples_ folder. Mess around with the provided files (modify the contents, filename, size, anything!). Use manual and automated validation procedures to see what causes the checksum to change.
 
