@@ -29,5 +29,29 @@ _As an archivist, I need to embed my institution's copyright notice into all acc
 
 ### ACTIVITY: Add descriptive metadata to A/V files
 
-[being written]
+1. Open Terminal. `cd` to the Desktop copy of _av-metadata-samples_ folder.
 
+2. We are going to use FFmpeg to write metadata in a key,value pair into an A/V file. FFmpeg (and many other tools that write metadata) has their only or default option to create a temporary file or create a new output file with updated metadata values. This is useful for testing commands because it does not overwrite your original file. We want to add a dummy title to the file _test1.mkv_. We can do that using the FFmpeg command:
+
+        ffmpeg -loglevel quiet -i test1.mkv -codec copy -metadata title="My title" test1-out.mkv
+
+*ffmpeg* | starts the command
+
+*-loglevel quiet* | show nothing at all from the library's set log level 
+
+*-i input_file* | path, name and extension of the input file
+
+*-codec copy* | a complex filtergraph using the fps filter to set frame rate, the scale filter to resize. The scale value of -1 preserves the aspect ratio
+
+*-metadata title=""* | sets metadata option for tag "title" with text between the double quotes
+
+*output_file* | path, name and extension of the output file (make sure it's different than the source filename so there are no conflicts!)
+
+3. Using the format in Step #2, try to update other metadata in other provided sample files. NB: assigning an empty value ("") will delete metadata from the field. Reading the [`-metadata` docs](http://ffmpeg.org/ffmpeg.html#Main-options) for more information and check out the resources in the next section for tag IDs. 
+
+## Recommended resources 
+
+- [FFmpeg Metadata Wiki](https://wiki.multimedia.cx/index.php?title=FFmpeg_Metadata)
+- [How To: Create/Write ID3 tags using ffmpeg](http://jonhall.info/how_to/create_id3_tags_using_ffmpeg) by John Hall (2016?)
+- [Supplying FFmpeg With Metadata](http://multimedia.cx/eggs/supplying-ffmpeg-with-metadata/) by "Multimedia Mike"
+ (2010)
