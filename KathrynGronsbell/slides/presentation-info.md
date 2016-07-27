@@ -1,5 +1,5 @@
 # Introduction to automated procedures for digital asset management
 
-Presentat slides will be shared via PDF in this folder and link to the online version will be made available in this document.
+Slides can be viewed online [here](https://docs.google.com/presentation/d/1Gv-25KIdMrKGfYLo1bifq3nmegJY-oEKxrYXAQm68dk/present?usp=sharing).
 
-All instructional material can be found in the _workshops_ folder in this repo.
+All instructional material can be found in the *workshop-materials* folder in this repo.
