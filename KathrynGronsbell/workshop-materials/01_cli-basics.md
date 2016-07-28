@@ -163,6 +163,8 @@ You can move through your own file system via the CLI with a few simple commands
 
         vim file1.txt
 
+ FYI: to escape vim, click the `esc` key. Then `control` + `z`. 
+
 11. Let's create a new subdirectory. Use the `mkdir` command (aka make directory). Try this:
 
         mkdir other-subdir
