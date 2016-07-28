@@ -204,6 +204,7 @@ You can move through your own file system via the CLI with a few simple commands
 4. [An Introduction to Using the Command Line
 Interface (CLI) to Work with Files and Directories (MAC OS)](https://www.avpreserve.com/wp-content/uploads/2015/09/CLI_MacOS_Tutorial.pdf) by Bertram Lyons, AVPreserve (2015)
 5. [the sourcecaster](https://datapraxis.github.io/sourcecaster/) - CLI command generating resource that "helps you use the command line to work through common challenges that come up when working with digital primary sources", created by [Thomas Padilla](https://github.com/thomasgpadilla) and [James Baker](https://github.com/drjwbaker)
+6. [Script Ahoy: Community Resource for Archivists and Librarians Scripting](http://dd388.github.io/crals/) created by Jarrett Drake and Dianne Dietrich.
 
 
 
