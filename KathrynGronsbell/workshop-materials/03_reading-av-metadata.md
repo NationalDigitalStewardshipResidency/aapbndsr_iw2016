@@ -78,7 +78,13 @@ MediaInfo is ["a convenient unified display of the most relevant technical and t
             
             mediainfo --Inform="General;%FileName%" --Inform="Video;%Format%" --Inform="Audio;%SamplingRate%" [file]
 
- Want to dig down to a specific string within the full output? Find out from this [stackexchange answer](http://stackoverflow.com/a/26508567) from the MediaInfo creator/main developer. 
+  Want to dig down to a specific string within the full output? Find out from this [stackexchange answer](http://stackoverflow.com/a/26508567) from the MediaInfo creator/main developer. 
+
+7. FROM 7/28/2016 in-person NDSR session. How to create formatted PBCore record outputs using MediaInfo:
+
+            mediainfo --Output=PBCore fred_ott_sneeze_512kb.mp4 > fred-pbcore.xml
+            
+            mediainfo --Output=PBCore2 fred_ott_sneeze_512kb.mp4 > fred-pbcore2.xml
 
 ### Read metadata using ffprobe
 
