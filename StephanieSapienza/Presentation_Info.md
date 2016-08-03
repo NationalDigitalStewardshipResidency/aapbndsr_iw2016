@@ -4,6 +4,6 @@ Slides from Stephanie's presentation on project management can be found [here](h
 
 ## Contact Info
 
-Stephanie Sapienza
-Phone: 626-676-6451
+Stephanie Sapienza  
+Phone: 626-676-6451  
 Email: ssapienza@sbcglobal.net
