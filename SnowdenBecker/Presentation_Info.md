@@ -5,8 +5,6 @@ Slides from Snowden's presentation on professional development can be found [her
 
 ## Contact Info
 
-Snowden Becker
-
-Phone: 323-365-9263
-
+Snowden Becker  
+Phone: 323-365-9263  
 Email: becker@gseis.ucla.edu
