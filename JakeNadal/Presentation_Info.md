@@ -7,5 +7,5 @@ Jake's slides on digital file formats can be found [here](https://drive.google.c
 
 ## Contact Info
 
-Jake Nadal
+Jake Nadal  
 Email: jnadal@princeton.edu

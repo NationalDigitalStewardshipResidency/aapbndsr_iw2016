@@ -7,6 +7,6 @@ Slides from Rebecca's presentation on digital audiovisual media can be found [he
 
 ## Contact Info
 
-Rebecca Fraimow
-Phone: 617-300-2678
+Rebecca Fraimow  
+Phone: 617-300-2678  
 Email: rebecca_fraimow@wgbh.org

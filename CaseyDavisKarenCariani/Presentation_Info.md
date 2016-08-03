@@ -5,9 +5,9 @@ Slides from Casey and Karen's presentation on the American Archive of Public Bro
 
 ## Contact Info
 
-Casey Davis
-Phone: 617-300-5921
+Casey Davis  
+Phone: 617-300-5921  
 Email: casey_davis@wgbh.org
 
-Karen Cariani
+Karen Cariani  
 Email: karen_cariani@wgbh.org 

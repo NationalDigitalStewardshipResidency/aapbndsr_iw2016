@@ -2,5 +2,5 @@
 
 ## Contact Info
 
-Joey Heinen
+Joey Heinen  
 Email: joeygheinen.jh@gmail.com

@@ -5,10 +5,10 @@ A copy of Nancy's handout on the digital preservation storage landscape at MIT c
 
 ## Contact Info
 
-Nancy McGovern
-Phone: 617-253-5664
+Nancy McGovern  
+Phone: 617-253-5664  
 Email: nancymcg@mit.edu
 
-Kari Smith
-Phone: 734-358-8050
+Kari Smith  
+Phone: 734-358-8050  
 Email: kari@globalarchivist.com

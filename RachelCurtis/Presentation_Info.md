@@ -6,6 +6,6 @@ A copy of the Library of Congress' documentation template can be found [here](ht
 
 ## Contact Info
 
-Rachel Curtis
-Phone: 202-707-3140
+Rachel Curtis  
+Phone: 202-707-3140  
 Email: rcur@loc.gov
